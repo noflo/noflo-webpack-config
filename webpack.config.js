@@ -34,24 +34,10 @@ module.exports = {
         ],
       },
       {
-        test: /\.s$/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-          },
-        },
-      },
-      {
         test: /\.coffee$/,
         use: [
           {
             loader: 'coffee-loader',
-            options: {
-              transpile: {
-                presets: ['@babel/preset-env'],
-              },
-            },
           },
         ],
       },
