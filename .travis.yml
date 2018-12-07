@@ -3,3 +3,11 @@ node_js:
 - lts/*
 before_script:
 - npm run build
+deploy:
+  provider: npm
+  email: henri.bergius@iki.fi
+  api_key:
+    secure: kvtGN016EJuYatzWp8wUlj1+s1e1guHBc46czToYRuFCLIm9/nCexZ5s7EoOGY0ytT8CwqotBxBr/orZqMIDhPe2AA7ix8q9Obc3dILLdyhP7eEmnmZYtubMGphAGkW5W09+jd6nsAUdrwNt9i9Ip++zUxDLthmYnDp9r9ir56CnqmYTD8jeTwDX44IKJwg4n776zrcoK5DQyQpWTCoD58JVVvKvNKpENjLbXkN/IL2qpqjYig6frO/TS7Eo1DNdjeYw4S6JG7c7Z5GL/c5Tnxm6md6Dc5eOxqek0MbxCe/tYan5WJo4ET8mdQvmH1rW778Kkpaij0zArMPkFNeT9gAmv1b3ZgkQZ3yJLZMN0oV+9TTvUIMX+KeF2vyBWcZxhOlt4BTlhWoOSR2iPBzQdYvoHzkIF4XKB7V8aYHkLKDxICCr80tnNFk6Kfwh5GH1NnBpgGpC8stP4NxOd5KNr6i16KmkLu8VWUdAhLaPa0HViCkM2fj6suoHExeubVxBBwDBOsCcG4ih2y+moNICg4XBvOpUHrrAROa9QvcXf+yS4hU+qVCLwaB+64u0ZvjSKYNOH9nV+fR7QYwMY1y2yeZn4/mfm0SHrINzu2DCwaMfWVHpMHUtiNrVAumjBxhEI5gzDSWGtwjw9G/heUi2btC0mYwAus0pEQ6ZyOAgHzU=
+  on:
+    tags: true
+    repo: noflo/noflo-webpack-config
