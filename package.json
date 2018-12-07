@@ -1,0 +1,42 @@
+{
+  "name": "noflo-webpack-config",
+  "version": "1.0.0",
+  "description": "Base webpack configuration for NoFlo component projects",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "noflo-cache-preheat",
+    "build": "webpack",
+    "pretest": "eslint *.js",
+    "test": "fbp-spec --address ws://localhost:3569 --command \"noflo-runtime-headless -f dist/test.js\" spec/*.yaml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/noflo/noflo-webpack-config.git"
+  },
+  "keywords": [
+    "noflo",
+    "webpack"
+  ],
+  "author": "Henri Bergius <henri.bergius@iki.fi>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noflo/noflo-webpack-config/issues"
+  },
+  "homepage": "https://github.com/noflo/noflo-webpack-config#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-loader": "^8.0.4",
+    "copy-webpack-plugin": "^4.6.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "fbp-spec": "^0.6.6",
+    "noflo-component-loader": "^0.3.2",
+    "noflo-core": "^0.6.0",
+    "noflo-runtime-headless": "^0.1.0",
+    "noflo-runtime-postmessage": "^0.10.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
