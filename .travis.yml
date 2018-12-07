@@ -11,3 +11,5 @@ deploy:
   on:
     tags: true
     repo: noflo/noflo-webpack-config
+addons:
+  chrome: stable
