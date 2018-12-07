@@ -20,7 +20,7 @@ module.exports = {
             options: {
               graph: null,
               debug: true,
-              baseDir: __dirname,
+              baseDir: process.cwd(),
               manifest: {
                 runtimes: ['noflo'],
                 discover: true,
