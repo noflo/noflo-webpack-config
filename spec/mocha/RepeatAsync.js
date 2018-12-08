@@ -1,7 +1,3 @@
-const noflo = require('noflo');
-
-const baseDir = 'noflo-core';
-
 describe('RepeatAsync component', () => {
   let c = null;
   let ins1 = null;
