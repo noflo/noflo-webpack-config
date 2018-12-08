@@ -8,7 +8,7 @@
     "build": "webpack",
     "pretest": "eslint *.js",
     "fbp-spec": "fbp-spec --address ws://localhost:3569 --command \"noflo-runtime-headless -f dist/test.js\" spec/*.yaml",
-    "karma": "karma start",
+    "karma": "karma start karma.config.js",
     "test": "npm run fbp-spec && npm run karma"
   },
   "repository": {
