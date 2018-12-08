@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = (config) => {
   const configuration = {
     basePath: process.cwd(),
@@ -10,6 +12,7 @@ module.exports = (config) => {
     ],
     files: [
       'dist/*.js',
+      path.resolve(__dirname, 'inject.js'),
       'spec/*.js',
       'spec/**/*.js',
     ],
