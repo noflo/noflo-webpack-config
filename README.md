@@ -19,6 +19,8 @@ Then add a build command to your NPM scripts:
 "build": "webpack --config node_modules/noflo-webpack-config/webpack.config.js",
 ```
 
+Now you should be able to make a browser build of your components with `npm run build`.
+
 Note: if you have CoffeeScript dependencies, install also the `coffee-loader` package.
 
 ## Testing components with fbp-spec in browser
@@ -30,8 +32,34 @@ You need to add the following development dependencies:
 Then add a test command to your NPM scripts:
 
 ```
-"test": "fbp-spec --address ws://localhost:3569 --command \"noflo-runtime-headless -f dist/test.js\" spec/*.yaml",
+"test:fbp-spec": "fbp-spec --address ws://localhost:3569 --command \"noflo-runtime-headless -f dist/test.js\" spec/*.yaml",
 ```
+
+Now you should be able to run fbp-specs in a browser with `npm run test:fbp-spec`.
+
+## Testing components with Mocha in browser
+
+You need to add the following development dependencies:
+
+* `chai`
+* `karma`
+* `karma-chai`
+* `karma-chrome-launcher`
+* `karma-mocha`
+* `karma-mocha-reporter`
+
+Then add a test command to your NPM scripts:
+
+```
+"test:mocha": "karma start node_modules/noflo-webpack-config/karma.config.js",
+```
+
+Now you should be able to run Mocha tests in a browser with `npm run test:mocha`.
+
+Notes:
+
+* `noflo`, `chai` and `baseDir` are available globally, so no need for additional requires in your test files
+* the test files should be located in `spec/*.js` or `spec/**/*.js`
 
 ## Changes
 
