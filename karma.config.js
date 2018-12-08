@@ -1,5 +1,6 @@
 module.exports = (config) => {
   const configuration = {
+    basePath: process.cwd(),
     frameworks: [
       'mocha',
       'chai',
@@ -10,6 +11,7 @@ module.exports = (config) => {
     files: [
       'dist/*.js',
       'spec/*.js',
+      'spec/**/*.js',
     ],
     browsers: ['ChromeHeadless'],
     customLaunchers: {
