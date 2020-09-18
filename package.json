@@ -40,7 +40,7 @@
     "noflo-core": "^0.6.0",
     "noflo-runtime-headless": "^0.1.0",
     "noflo-runtime-postmessage": "^0.10.1",
-    "puppeteer": "^1.11.0",
+    "puppeteer": "^5.3.0",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2"
   }
