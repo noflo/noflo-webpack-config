@@ -28,7 +28,7 @@
   "devDependencies": {
     "copy-webpack-plugin": "^6.1.0",
     "eslint": "^5.9.0",
-    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.14.0",
     "fbp-spec": "^0.6.6",
     "karma": "^5.2.2",
