@@ -15,6 +15,12 @@ module.exports = (config) => {
       path.resolve(__dirname, 'inject.js'),
       'spec/*.js',
       'spec/**/*.js',
+      {
+        pattern: 'dist/*.html',
+        included: false,
+        served: true,
+        watched: true,
+      },
     ],
     browsers: ['ChromeHeadless'],
     customLaunchers: {
