@@ -63,6 +63,8 @@ Notes:
 
 ## Changes
 
+* 2.0.0 (October 13th 2020)
+  - Compatibility with [WebPack 5.x](https://blog.sindresorhus.com/webpack-5-headache-b6ac24973bf1)
 * 1.1.0 (December 8th 2018)
   - Fixed baseDir setting to `process.cwd()`
   - Added basic usage documentation
