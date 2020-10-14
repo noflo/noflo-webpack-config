@@ -1,6 +1,6 @@
 {
   "name": "noflo-webpack-config",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Base webpack configuration for NoFlo component projects",
   "main": "webpack.config.js",
   "scripts": {

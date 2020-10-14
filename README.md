@@ -63,6 +63,8 @@ Notes:
 
 ## Changes
 
+* 2.0.3 (October 14th 2020)
+  - Made EventEmitter polyfill available by default
 * 2.0.2 (October 14th 2020)
   - Made it easier to extend the webpack config via `require('noflo-webpack-config')`
 * 2.0.1 (October 13th 2020)
