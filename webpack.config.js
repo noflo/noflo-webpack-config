@@ -1,9 +1,15 @@
 const path = require('path');
 const webpack = require('webpack');
 
+let entryPath = 'webpack.entry.js';
+try {
+  entryPath = require.resolve('noflo-runtime-headless/spec/build/webpack.entry.js'),
+} catch (e) {
+}
+
 module.exports = {
   entry: {
-    test: require.resolve('noflo-runtime-headless/spec/build/webpack.entry.js'),
+    test: entryPath,
   },
   output: {
     path: path.resolve(process.cwd(), 'dist'),
