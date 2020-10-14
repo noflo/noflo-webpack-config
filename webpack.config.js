@@ -3,8 +3,9 @@ const webpack = require('webpack');
 
 let entryPath = 'webpack.entry.js';
 try {
-  entryPath = require.resolve('noflo-runtime-headless/spec/build/webpack.entry.js'),
+  entryPath = require.resolve('noflo-runtime-headless/spec/build/webpack.entry.js');
 } catch (e) {
+  // Ignore
 }
 
 module.exports = {
