@@ -65,6 +65,7 @@ module.exports = {
       assert: false,
       child_process: false,
       constants: false,
+      events: require.resolve('events/'),
       fs: false,
       os: false,
       path: require.resolve('path-browserify'),
