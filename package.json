@@ -30,7 +30,7 @@
     "eslint": "^7.9.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.14.0",
-    "fbp-spec": "^0.6.6",
+    "fbp-spec": "^0.7.1",
     "karma": "^5.2.2",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^3.1.0",
