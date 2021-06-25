@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/noflo/noflo-webpack-config#readme",
   "devDependencies": {
-    "copy-webpack-plugin": "^8.0.0",
+    "copy-webpack-plugin": "^9.0.1",
     "eslint": "^7.9.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.14.0",
